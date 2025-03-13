@@ -1,6 +1,8 @@
 ### LIBRARY MANAGEMENT SYSTEM
 A **command-line interface (CLI)** application for managing a library. This application allows users to manage authors and books in a library system. 
+
 It is built using: 
+
 1.Python 
 2.SQLAlchemy for database management 
 3.SQLite as the database backend.
