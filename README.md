@@ -8,21 +8,21 @@ It is built using:
 ## Features
 The Library Management System provides the following features:
 1.Author Management
-    - *Add Authors: Add new authors to the library.
-    - *List Authors: View all authors in the library.
-    - *Delete Authors: Remove authors from the library.
-    - *Find Authors by ID: Search for authors by their unique ID.
+    - Add Authors: Add new authors to the library.
+    - List Authors: View all authors in the library.
+    - Delete Authors: Remove authors from the library.
+    - Find Authors by ID: Search for authors by their unique ID.
 
 2.Book Management
-- *Add Books: Add new books to the library, linking them to authors.
-- *List Books: View all books in the library.
-- *Delete Books: Remove books from the library.
-- *Find Books by ID: Search for books by their unique ID.
+- Add Books: Add new books to the library, linking them to authors.
+- List Books: View all books in the library.
+- Delete Books: Remove books from the library.
+- Find Books by ID: Search for books by their unique ID.
 
 3.Database Management
-- *SQLite Database: A lightweight database is used to store library data.
-- *SQLAlchemy ORM: Object-Relational Mapping (ORM) is used to interact with the database.
-- *Seeding: A script is provided to populate the database with test data.
+- SQLite Database: A lightweight database is used to store library data.
+- SQLAlchemy ORM: Object-Relational Mapping (ORM) is used to interact with the database.
+- Seeding: A script is provided to populate the database with test data.
 
 
 ## Technologies Used
