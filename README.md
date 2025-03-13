@@ -71,13 +71,13 @@ python lib/cli.py
 The project is organized as follows:
 ```
 library-management-system/
-├── Pipfile                # Manages project dependencies
-├── Pipfile.lock           # Lock file for dependency versions
-├── README.md              # Project documentation
-└── lib/                   # Contains the application code
-    ├── cli.py             # Command-line interface for the application
-    ├── models.py          # Defines the database models and ORM methods
-    └── seed.py            # Script to populate the database with test data
+    -Pipfile                # Manages project dependencies
+    -Pipfile.lock           # Lock file for dependency versions
+    -README.md              # Project documentation
+    -lib/                   # Contains the application code
+        -cli.py             # Command-line interface for the application
+        -models.py          # Defines the database models and ORM methods
+        -seed.py            # Script to populate the database with test data
 ```
 
 ## Usage
