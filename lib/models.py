@@ -13,11 +13,11 @@ class Author(Base):
     __tablename__ = 'authors'
     id = Column(Integer, primary_key=True)
     name = Column(String, nullable=False)
-    books = relationship('Book', back_populates='author')
+    books = relationship('Book', back_populates='author') #one to many relationship with book
 
     def __repr__(self):
         return f"<Author(id={self.id}, name='{self.name}')>"
-
+#ORM METHODS
     @classmethod
     def create(cls, name):
         author = cls(name=name)
@@ -41,7 +41,7 @@ class Author(Base):
     @classmethod
     def find_by_id(cls, id):
         return session.query(cls).get(id)
-
+#Book models
 class Book(Base):
     __tablename__ = 'books'
     id = Column(Integer, primary_key=True)

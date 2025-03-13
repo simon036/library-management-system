@@ -12,27 +12,32 @@ def display_menu():
     print("8. Find book by ID")
     print("9. Exit")
 
+# list of all authors
 def list_authors():
     authors = Author.get_all()
     for author in authors:
         print(author)
 
+# list of all books
 def list_books():
     books = Book.get_all()
     for book in books:
         print(book)
 
+# adds new author
 def add_author():
     name = input("Enter author name: ")
     Author.create(name)
     print("Author added successfully!")
 
+# adds new book
 def add_book():
     title = input("Enter book title: ")
     author_id = input("Enter author ID: ")
     Book.create(title, author_id)
     print("Book added successfully!")
 
+# deletes a author using id
 def delete_author():
     author_id = input("Enter author ID to delete: ")
     if Author.delete(author_id):
@@ -40,6 +45,7 @@ def delete_author():
     else:
         print("Author not found.")
 
+# deletes a book using id
 def delete_book():
     book_id = input("Enter book ID to delete: ")
     if Book.delete(book_id):
@@ -47,6 +53,7 @@ def delete_book():
     else:
         print("Book not found.")
 
+#finds author by id
 def find_author_by_id():
     author_id = input("Enter author ID: ")
     author = Author.find_by_id(author_id)
@@ -55,6 +62,7 @@ def find_author_by_id():
     else:
         print("Author not found.")
 
+#finds book by id
 def find_book_by_id():
     book_id = input("Enter book ID: ")
     book = Book.find_by_id(book_id)
@@ -62,7 +70,8 @@ def find_book_by_id():
         print(book)
     else:
         print("Book not found.")
-
+        
+#function to run the cli
 def main():
     while True:
         display_menu()
